@@ -1,0 +1,22 @@
+DBMS (Database Management System) and RDBMS (Relational Database Management System) are both systems designed for managing databases, but they have some key differences:
+
+Data Model:
+
+DBMS: DBMS can support various data models, including hierarchical, network, and relational models. It may or may not enforce relationships between tables.
+RDBMS: RDBMS specifically implements the relational model. Data is organized into tables with rows and columns, and relationships between tables are enforced using keys.
+Data Integrity:
+
+DBMS: DBMS typically does not enforce referential integrity constraints, leaving it up to the application to maintain data consistency.
+RDBMS: RDBMS enforces referential integrity constraints, ensuring that relationships between tables are maintained and preventing orphaned or inconsistent data.
+Query Language:
+
+DBMS: DBMS may support its own proprietary query languages or use standard SQL (Structured Query Language).
+RDBMS: RDBMS uses SQL as the standard query language for querying and manipulating data.
+Performance:
+
+DBMS: DBMS may provide lower performance compared to RDBMS, especially in scenarios where complex queries involving multiple tables are common.
+RDBMS: RDBMS is optimized for relational data and typically provides better performance for relational operations.
+Scalability and Flexibility:
+
+DBMS: DBMS may offer more flexibility in terms of data modeling but might lack scalability features required for large-scale relational data management.
+RDBMS: RDBMS is specifically designed for relational data management and often comes with scalability features like partitioning, clustering, and replication to handle large volumes of data.

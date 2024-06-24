@@ -1,0 +1,13 @@
+Data redundancy refers to the duplication of data within a database or across multiple databases. In other words, it occurs when the same piece of data is stored in multiple places. This redundancy can occur at different levels, including within a single table, across multiple tables, or even across different databases within an organization.
+
+Data redundancy can have both advantages and disadvantages:
+
+Advantages:
+
+Improved Performance: In some cases, redundant data can improve query performance by reducing the need for complex joins or by precomputing certain values.
+Data Availability: Redundant copies of data can ensure that data is available even if one copy becomes unavailable due to system failures or network issues.
+Disadvantages:
+
+Data Inconsistency: Redundant data increases the risk of inconsistencies, as updates made to one copy of the data may not be propagated to all copies. This can lead to discrepancies and inaccuracies in the database.
+Increased Storage Requirements: Storing redundant data consumes additional storage space, which can increase storage costs and resource utilization.
+Complexity: Managing redundant data adds complexity to the database design, maintenance, and update processes. It can also make it more challenging to enforce data integrity constraints and ensure data consistency.

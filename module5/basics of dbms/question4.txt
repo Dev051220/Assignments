@@ -1,0 +1,11 @@
+"ACID" (Atomicity, Consistency, Isolation, Durability) rules, which are fundamental principles in the design and implementation of relational database management systems (RDBMS). Here's a brief explanation of each:
+
+Atomicity: Atomicity ensures that a transaction is treated as a single, indivisible unit of work. Either all of the operations within the transaction are completed successfully, or none of them are. If any part of the transaction fails, the entire transaction is rolled back to its original state, ensuring that the database remains in a consistent state.
+
+Consistency: Consistency ensures that the database remains in a valid state before and after the transaction. In other words, the database must adhere to all constraints, rules, and relationships defined in the database schema. Transactions should not violate any integrity constraints, such as primary key, foreign key, or unique constraints.
+
+Isolation: Isolation ensures that the execution of transactions concurrently does not result in interference between them. Each transaction should appear to execute independently of other transactions, even if they are executing simultaneously. Isolation prevents issues such as dirty reads, non-repeatable reads, and phantom reads by ensuring that transactions are isolated from each other until they are completed.
+
+Durability: Durability ensures that once a transaction is committed, its effects persist even in the event of system failures, such as power outages, crashes, or errors. The changes made by committed transactions should be permanently stored in the database and should not be lost due to system failures. This typically involves writing transaction logs or journal entries to ensure that changes can be recovered and replayed if necessary.
+
+Together, these ACID properties provide guarantees regarding the reliability, consistency, and integrity of data in relational databases, making them suitable for mission-critical applications where data accuracy and reliability are paramount.

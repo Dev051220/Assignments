@@ -1,0 +1,6 @@
+A trigger in SQL is a database object that automatically executes or fires a specified set of SQL statements when a certain event occurs. Triggers can be used to enforce complex business rules, maintain audit trails, or automate tasks.
+
+Key Concepts of Triggers
+Event: The event that causes the trigger to fire. Common events are INSERT, UPDATE, and DELETE.
+Timing: Specifies when the trigger action should be executed. Timing can be BEFORE or AFTER the event.
+Scope: The scope determines whether the trigger should be executed for each row affected by the event or just once per event. This is defined as FOR EACH ROW or FOR EACH STATEMENT.

@@ -1,0 +1,13 @@
+Normalization is the process of organizing data in a database efficiently. This process involves breaking down a database into smaller, more manageable tables and establishing relationships between them. The main objectives of normalization are to reduce data redundancy and dependency, thereby improving data integrity and minimizing anomalies during data manipulation.
+
+Normalization typically involves a series of steps, often represented by normal forms (such as First Normal Form, Second Normal Form, Third Normal Form, etc.), each addressing specific aspects of data organization and dependency. The higher the normal form, the more rigorous the normalization process.
+
+Some common techniques used in normalization include:
+
+1.Eliminating repeating groups: Breaking down tables to eliminate redundant data.
+
+2.Ensuring atomicity: Ensuring that each attribute contains only atomic values.
+
+3.Removing partial dependencies: Ensuring that every non-key attribute is fully functionally dependent on the primary key.
+
+4.Eliminating transitive dependencies: Ensuring that non-key attributes are not functionally dependent on other non-key attributes.

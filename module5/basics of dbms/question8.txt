@@ -1,0 +1,42 @@
+SQL key constraints are rules applied to columns or sets of columns in a table to enforce data integrity and maintain consistency within a relational database. There are several types of key constraints in SQL, including primary keys, unique keys, and foreign keys.
+
+Primary Key Constraint: A primary key constraint uniquely identifies each record in a table and ensures that the values in the specified column(s) are unique and not null.
+Example:
+
+sql
+Copy code
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    DepartmentID INT
+);
+In this example, the EmployeeID column is designated as the primary key for the Employees table. This ensures that each employee has a unique identifier, and no two employees can have the same EmployeeID.
+
+Unique Constraint: A unique constraint ensures that the values in the specified column(s) are unique across all records in the table, similar to a primary key constraint, but it allows null values.
+Example:
+
+sql
+Copy code
+CREATE TABLE Products (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(100) UNIQUE,
+    Price DECIMAL(10,2),
+    CategoryID INT
+);
+In this example, the ProductName column has a unique constraint applied to it, ensuring that each product name is unique across all records in the Products table.
+
+Foreign Key Constraint: A foreign key constraint establishes a relationship between two tables by linking the value(s) in one table's column(s) to the value(s) in another table's column(s). It ensures referential integrity, meaning that values in the foreign key column(s) must match values in the primary key or unique key column(s) of the referenced table.
+Example:
+
+sql
+Copy code
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    OrderDate DATE,
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
+In this example, the Orders table has a foreign key constraint on the CustomerID column, referencing the CustomerID column in the Customers table. This ensures that every CustomerID value in the Orders table must correspond to an existing CustomerID value in the Customers table, maintaining the integrity of the relationship between orders and customers.
+
+These are some of the key constraints used in SQL to enforce data integrity and relational consistency within a database.

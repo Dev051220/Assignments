@@ -1,0 +1,37 @@
+create database assignment;
+use assignment;
+create table student( Rollno int primary key , Name varchar(10),Branch varchar(20));
+insert into student values (1,'Jay','Computer Science');
+insert into student values (2,'Suhani','Electronic and com');
+insert into student values (3,'Kriti','electronic and com');
+select * from student;
+
++--------+--------+--------------------+
+| Rollno | Name   | Branch             |
++--------+--------+--------------------+
+|      1 | Jay    | Computer Science   |
+|      2 | Suhani | Electronic and com |
+|      3 | Kriti  | electronic and com |
++--------+--------+--------------------+
+
+
+
+create table Exam (Rollno int, S_code varchar(10), Marks int, P_code varchar(10));
+alter table exam add foreign key (Rollno) references student(Rollno);
+INSERT INTO Exam  VALUES (1, 'CS11', 50, 'CS');
+insert into Exam values (1, 'CS12', 60, 'CS');
+insert into Exam values (2, 'EC101', 66, 'EC');
+insert into Exam values (2, 'EC102', 70, 'EC');
+insert into Exam values(3, 'EC101', 45, 'EC');
+insert into Exam values(3,'EC102',50,'EC');
+
++--------+--------+-------+--------+
+| Rollno | S_code | Marks | P_code |
++--------+--------+-------+--------+
+|      1 | CS11   |    50 | CS     |
+|      1 | CS12   |    60 | CS     |
+|      2 | EC101  |    66 | EC     |
+|      2 | EC102  |    70 | EC     |
+|      3 | EC101  |    45 | EC     |
+|      3 | EC102  |    50 | EC     |
++--------+--------+-------+--------+

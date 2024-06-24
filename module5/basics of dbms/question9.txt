@@ -1,0 +1,8 @@
+A savepoint is a feature in SQL that allows you to set a point within a transaction to which you can later roll back, if necessary. This can be useful for error handling within a transaction, allowing you to undo part of the transaction without having to roll back the entire transaction.
+
+Here's how to create and use a savepoint in SQL:
+
+Start a transaction: Begin your transaction using the BEGIN TRANSACTION statement.
+Create a savepoint: Use the SAVEPOINT statement to set a savepoint at a particular point within the transaction.
+Roll back to a savepoint: If needed, you can roll back to the savepoint using the ROLLBACK TO SAVEPOINT statement.
+Commit the transaction: When everything is complete and correct, commit the entire transaction using the COMMIT statement.
